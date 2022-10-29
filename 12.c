@@ -2,14 +2,11 @@
 //rotating  digit of a number towards one position right
 int main()
 {
-    int x , y, z, a,num;
+    int x;
     printf("Enter Number\n");
     scanf("%d",&x);
 
-    y = x %10;
-    z = y*100;
-    a = x/10;
-    num=z+a;
-    printf("%d",num);
+    x=(x%10)*100+(x/10);
+    printf("%d",x);
     return 0;
 }
